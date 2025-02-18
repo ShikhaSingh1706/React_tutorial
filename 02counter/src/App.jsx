@@ -4,11 +4,23 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let counter=0
+
+  //hook useState
+  let  [counter,setCounter]= useState(0)
+
+
   const addValue=()=>{
    // console.log("value added")
   counter=counter+1
-  console.log(counter)
+  setCounter(counter)   //update counter value everywhere where it is present on UI
+  //console.log(counter)
+
+  }
+  const removeValue=()=>{
+   // console.log("value added")
+  counter=counter-1
+  setCounter(counter)   //update counter value everywhere where it is present on UI
+  //console.log(counter)
 
   }
 
@@ -20,7 +32,7 @@ function App() {
       onClick={addValue}>
         Add value</button>
      <br/><br/>
-     <button>Remove value</button>
+     <button onClick={removeValue}>Remove value</button>
     </>
   )
 }
