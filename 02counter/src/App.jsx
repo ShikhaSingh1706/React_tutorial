@@ -19,9 +19,13 @@ function App() {
   const removeValue=()=>{
    // console.log("value added")
   counter=counter-1
+  if (counter< 0){
+    alert("value can not be negative")
+  }
+  else{
   setCounter(counter)   //update counter value everywhere where it is present on UI
   //console.log(counter)
-
+  }
   }
 
   return (
