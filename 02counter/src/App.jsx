@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -14,6 +15,9 @@ function App() {
   counter=counter+1
   setCounter(counter)   //update counter value everywhere where it is present on UI
   //console.log(counter)
+  //setCounter(prevCounter=>prevCounter+1)
+ // setCounter(prevCounter=>prevCounter+1)
+  //setCounter(prevCounter=>prevCounter+1)
 
   }
   const removeValue=()=>{
